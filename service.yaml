@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mysite-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: mysite
+  ports:
+    - port: 8000
+      targetPort: 8000
