@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: mysite
-          image: harryjdh/mysite:latest
+          image: harryjdh/mysite:
           ports:
             - containerPort: 8000
           env:
