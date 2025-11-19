@@ -11,6 +11,10 @@ spec:
     metadata:
       labels:
         app: mysite
+      annotations:
+        argocd-image-updater.argoproj.io/image-list: mysite=harryjdh/mysite
+        argocd-image-updater.argoproj.io/mysite.update-strategy: latest
+        argocd-image-updater.argoproj.io/write-back-method: argocd
     spec:
       containers:
         - name: mysite
