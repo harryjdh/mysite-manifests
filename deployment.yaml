@@ -14,7 +14,8 @@ spec:
       annotations:
         argocd-image-updater.argoproj.io/image-list: mysite=harryjdh/mysite
         argocd-image-updater.argoproj.io/mysite.update-strategy: latest
-        argocd-image-updater.argoproj.io/write-back-method: argocd
+        argocd-image-updater.argoproj.io/write-back-method: git
+        argocd-image-updater.argoproj.io/write-back-target: deployment
     spec:
       containers:
         - name: mysite
